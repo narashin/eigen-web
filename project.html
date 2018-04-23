@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EIGEN PAGE V0.1</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./assets/flexboxgrid.css">
+  <link rel="stylesheet" type="text/css" href="./assets/js/slick-1.8.0/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="./assets/js/slick-1.8.0/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+</head>
+
+<body>
+  <div class="site-wrapper column">
+    <div class="menu-wrapper container-fluid center-md">
+      <nav class="row col-md-10  margin-auto-helper">
+        <div class="inline-flex col-md-4 logo-image">
+          <img class="logo" src="./assets/img/logo.png" alt="logo">
+        </div>
+        <ul class="menu-bar col-md-8 inline-flex end-md">
+          <li>
+            <a href="eigen.html">EIGEN</a>
+          </li>
+          <li>
+            <a href="works.html">WORKS</a>
+          </li>
+          <li>
+            <a href="project.html" class="active">PROJECT</a>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main-wrapper">
+      <div class="inline-flex row project-menu">
+        <ul class="inline-flex">
+          <li>
+            <a href="#" class="active">EDITORIAL</a>
+          </li>
+          <li>
+            <a href="#">PACKAGE</a>
+          </li>
+          <li>
+            <a href="#">POP</a>
+          </li>
+          <li>
+            <a href="#">DISPLAY</a>
+          </li>
+          <li>
+            <a href="#">MERCHANDISING</a>
+          </li>
+        </ul>
+      </div>
+
+        <div class="slick col-md-7">
+          <div>
+            <img src="./assets/img/testimage.gif" alt="">
+          </div>
+          <div>
+              <img src="./assets/img/testimage.gif" alt="">
+          </div>
+          <div>
+              <img src="./assets/img/testimage.gif" alt="">
+          </div>
+          <div>
+              <img src="./assets/img/testimage.gif" alt="">
+          </div>
+          <div>
+              <img src="./assets/img/testimage.gif" alt="">
+          </div>
+          <div>
+              <img src="./assets/img/testimage.gif" alt="">
+          </div>
+        </div>
+
+
+    </div>
+
+  </div>
+  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="./assets/js/slick-1.8.0/slick/slick.js"></script>
+  <script>
+    $(document).ready(function(){
+    $('.slick').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 3
+    });
+  });
+  </script>
+</body>
+
+</html>
