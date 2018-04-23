@@ -1,0 +1,345 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body{
+  margin: 0 0 0 0;
+  background-color: #F5F5F5;
+  color: #313132
+}
+
+
+.inline-flex {
+  flex: 1;
+  display: inline-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+
+.flex-wrap-md{
+  flex-wrap: wrap;
+}
+
+.padding-side {
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
+}
+
+.margin-auto-helper{
+  margin: auto;
+}
+
+/* HEADER :: TOP NAV */
+.menu-wrapper{
+  background-color: #313132;
+  margin: 0;
+}
+
+.logo{
+  width: auto;
+  height: 20px;
+  margin: auto;
+}
+
+.menu-bar{
+  font-size: 0.9rem;
+  list-style-type: none;
+  justify-self: flex-end;
+  -webkit-justify-content: flex-end;
+}
+
+nav > ul > li > a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover{
+  color: #EC6B00;
+}
+
+nav > ul > li > a.active{
+  color: #EC6B00;
+}
+
+/* EIGEN */
+
+.corp-name{
+  width:50%;
+  margin: auto;
+}
+.eigen-desc{
+  font-size: 0.9rem;
+  padding-top: 3rem;
+}
+
+.eigen-company-brief{
+  border: 1px solid #313132;
+  background-color: #F5F5F5;
+  color: #313132;
+  font-size: 0.7rem;
+  text-align: center;
+  width: 130px;
+  height: 30px;
+  padding-right: 0;
+  margin-top: 2rem;
+  margin-left: 0.1rem;
+}
+
+/* WORKS */
+.works-top{
+  background-repeat: no-repeat;
+  background-color:black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),url("../assets/img/works-top.jpg");
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 3rem;
+}
+.works-desc{
+  margin-top:100px;
+}
+.cube{
+  position: relative;
+  width: 206px;
+  height: 190px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: -5px;
+  margin-right: -3px;
+}
+/* CUBE2 */
+#cube1 > .square{
+  width:100px;
+  height:140px;
+  background:transparent;
+  border:solid 1.5px #EC6B00;
+  border-right: 0px;
+  border-top: 0px;
+
+  transform: skew(180deg,210deg);
+  position: absolute;
+  top: 41px;
+}
+#cube1 > .square2{
+  width:100px;
+  height:140px;
+  background:transparent;
+  border:solid 1.5px #EC6B00;
+  transform: skew(180deg,150deg);
+  position: absolute;
+  left:100px;
+  top: 41px;
+  border-left: 0px;
+  border-top: 0px;
+}
+#cube1 > .square3{
+  width:114px;
+  height:100px;
+  background:transparent;
+  border:solid 1.5px #EC6B00;
+  transform: rotate(150deg) translate(-40px, -16px) skew(30deg, 0deg);
+  position: absolute;
+  left: 0px;
+  top: -32px;
+}
+
+/* CUBE2 */
+#cube2 > .square{
+  width:100px;
+  height:140px;
+  background:transparent;
+  border:solid 2px #EC6B00;
+  border-right: 0px;
+  border-top: 0px;
+  transform: skew(180deg,210deg);
+  position: absolute;
+  top: 41px;
+}
+#cube2 > .square2{
+  width:100px;
+  height:140px;
+  background:transparent;
+  border:solid 2px #EC6B00;
+  transform: skew(180deg,150deg);
+  position: absolute;
+  left:100px;
+  top: 41px;
+  border-left: 0px;
+  border-top: 0px;
+}
+#cube2 > .square3{
+  width:114px;
+  height:100px;
+  background:#EC6B00;
+  border:solid 2px #EC6B00;
+  transform: rotate(150deg) translate(-40px, -16px) skew(30deg, 0deg);
+  position: absolute;
+  left: 0px;
+  top: -32px;
+  z-index: -1;
+}
+
+/* CUBE 3 */
+
+#cube3 > .square{
+  width:100px;
+  height:140px;
+  background:#EC6B00;
+  border:solid 2px #EC6B00;
+  transform: skew(180deg,210deg);
+  position: absolute;
+  top: 43px;
+  z-index: -1;
+}
+#cube3 > .square2{
+  width:100px;
+  height:140px;
+  background:#EC6B00;
+  border:solid 2px #EC6B00;
+  transform: skew(180deg,150deg);
+  position: absolute;
+  left:100px;
+  top: 43px;
+  z-index: -1;
+}
+#cube3 > .square3{
+  width:114px;
+  height:100px;
+  background:#EC6B00;
+  border:solid 2px #EC6B00;
+  transform: rotate(150deg) translate(-40px, -16px) skew(30deg, 0deg);
+  position: absolute;
+  left: 0px;
+  top: -32px;
+  z-index: -1;
+}
+
+.cube-icon{
+  font-size: 2rem;
+  color: #ffffff;
+  z-index: 999;
+}
+.cube-desc{
+  margin-top: 2.8rem;
+}
+.cube h3{
+  margin-top: 4rem;
+  font-size:1.5rem;
+}
+
+.cube p{
+  font-size: 0.5rem;
+  margin-top: -0.5rem;
+}
+
+.works-client{
+  text-align: center;
+  background-color: #EFF0F0;
+  margin: auto;
+  width: 100%;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.works-client > img{
+  width: 500px;
+  height: auto;
+}
+
+.works-service{
+  text-align: center;
+  background-color:#545658;
+  margin: auto;
+  width: 100%;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.works-service > h1{
+  color: #EC6B00;
+}
+
+.works-service > h2{
+  font-size: 1rem;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+
+/* PROJECT */
+
+.project-menu{
+  font-size: 0.8rem;
+  margin: auto;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.project-menu > ul{
+  list-style-type: none;
+}
+.project-menu > ul > li > a {
+  display: block;
+  color: #BEBDBD;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.project-menu > ul > li > a:hover{
+  color: #313132;
+}
+
+.project-menu > ul > li > a.active{
+  color: #313132;
+}
+
+/* CAROUSEL */
+
+/* ------------------------------------------------- */
+/* slick */
+/* ------------------------------------------------- */
+.slick{
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+.slick-arrow.slick-next{
+    z-index: 999;
+    width: 30px;
+    height: 30px;
+    border-right:2px solid #313132;
+    border-bottom:2px solid #313132;
+    transform: rotate(-45deg);
+    margin-top: -3rem;
+}
+
+.slick-arrow.slick-prev{
+  z-index: 999;
+  width: 30px;
+  height: 30px;
+  border-right:2px solid #313132;
+  border-bottom:2px solid #313132;
+  transform: rotate(135deg);
+  margin-top: -3rem;
+}
+
+.slick-arrow.slick-prev:before,
+.slick-arrow.slick-next:before{
+  content: '';
+}
+
+.slick-slide img:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),url("../assets/img/testimage.gif");
+}
