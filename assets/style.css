@@ -343,3 +343,38 @@ nav > ul > li > a.active{
 .slick-slide img:hover{
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),url("../assets/img/testimage.gif");
 }
+
+/* CONTACT */
+
+.contact-wrapper{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #E4E5E5;
+}
+
+.contact-wrapper > .contact-icon > i{
+  color: #EC6B00;
+  font-size: 2rem;
+}
+
+.contact-icon{
+  text-align: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.contact-icon-name{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-desc{
+  font-size: 0.8rem;
+}
+
+.contact-map{
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+.contact-map img{
+  width: 100%;
+}
