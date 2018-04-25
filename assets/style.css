@@ -1,9 +1,9 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Nanum Square", sans-serif;
 }
 
 body{
@@ -12,7 +12,9 @@ body{
   color: #313132
 }
 
-
+.row{
+  margin: 0 0 0 0;
+}
 .inline-flex {
   flex: 1;
   display: inline-flex;
@@ -36,7 +38,7 @@ body{
 
 /* HEADER :: TOP NAV */
 .menu-wrapper{
-  background-color: #313132;
+  background-color: #53575A;
   margin: 0;
 }
 
@@ -81,16 +83,7 @@ nav > ul > li > a.active{
 }
 
 .eigen-company-brief{
-  border: 1px solid #313132;
-  background-color: #F5F5F5;
-  color: #313132;
-  font-size: 0.7rem;
-  text-align: center;
   width: 130px;
-  height: 30px;
-  padding-right: 0;
-  margin-top: 2rem;
-  margin-left: 0.1rem;
 }
 
 /* WORKS */
@@ -226,12 +219,12 @@ nav > ul > li > a.active{
 }
 
 .cube-icon{
-  font-size: 2rem;
-  color: #ffffff;
-  z-index: 999;
+  width: 50px;
+  height: 50px;
+  margin-top: -20px;
 }
 .cube-desc{
-  margin-top: 2.8rem;
+  margin-top: 1rem;
 }
 .cube h3{
   margin-top: 4rem;
@@ -277,7 +270,7 @@ nav > ul > li > a.active{
 }
 
 
-/* PROJECT */
+/* performance */
 
 .project-menu{
   font-size: 0.8rem;
@@ -306,6 +299,37 @@ nav > ul > li > a.active{
 }
 
 /* CAROUSEL */
+
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: #A4A5A8;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: #3A3E42;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: #3A3E42;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+}
 
 /* ------------------------------------------------- */
 /* slick */
@@ -340,16 +364,48 @@ nav > ul > li > a.active{
   content: '';
 }
 
-.slick-slide img:hover{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),url("../assets/img/testimage.gif");
+.slick img{
+  width: 230px;
+  
+}
+.slick-container{
+  width: 230px;
+  height: 230px;
+  position: relative;
+}
+
+.slick-desc{
+  opacity: 0.9;
+  display: none;
+  background-color: #999999;
+  text-align: center;
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  color:#fff;
+}
+.slick-desc > img{
+  display: block!important;
+}
+.slick-desc > p {
+  margin-top: 45%;
+  opacity: 1;
 }
 
 /* CONTACT */
 
 .contact-wrapper{
+  padding-right: 0;
+  padding-left: 0;
+}
+.contact-wrapper > div{
+  width: 100%;
   padding-top: 4rem;
-  padding-bottom: 4rem;
   background-color: #E4E5E5;
+  padding-left: 0;
 }
 
 .contact-wrapper > .contact-icon > i{
@@ -359,18 +415,39 @@ nav > ul > li > a.active{
 
 .contact-icon{
   text-align: center;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem 2rem 1rem 2rem;
+}
+
+.contact-icon > img{
+  width: 50px;
+  height: auto;
+  margin: auto;
+}
+.contact-icon > .site{
+  margin-bottom: 5px;
+}
+.contact-icon > .telephone{
+  margin-bottom: 2px;
+}
+.contact-icon > .email{
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .contact-icon-name{
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+  font-weight: 900;
 }
 
 .contact-desc{
   font-size: 0.8rem;
 }
-
+.location-icon{
+  width: 100px;
+  margin-left: 16rem;
+  z-index: 1; 
+}
 .contact-map{
   margin-top: -5px;
   margin-bottom: -5px;
