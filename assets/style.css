@@ -9,7 +9,8 @@
 body{
   margin: 0 0 0 0;
   background-color: #F5F5F5;
-  color: #313132
+  color: #313132;
+  height: 100%;
 }
 
 .row{
@@ -35,6 +36,25 @@ body{
 .margin-auto-helper{
   margin: auto;
 }
+
+video#intro{
+  width: 100%;
+  height: auto;
+  left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#intro-logo{
+  display: none;
+  width: 400px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 /* HEADER :: TOP NAV */
 .menu-wrapper{
